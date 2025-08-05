@@ -8,8 +8,8 @@ class Book:
     def page_count(self):
         return self._page_count
     
-    def page_count(self, value):
-        if not isinstance(value, int):
+    def page_count(self, value = int):
+        if not int:
             print("page_count must be an integer")
         else:
             self._page_count = value
