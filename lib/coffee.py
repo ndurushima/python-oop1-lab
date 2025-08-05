@@ -2,14 +2,18 @@
 
 class Coffee:
     def __init__(self, size, price):
-        self.size = input("Enter the size of the coffee: ")
-        self.price = float(input("Enter the price of the coffee: "))
+        self.size = size
+        self.price = price
     
     def size(self):
-        if self is not None and not "Small" "Medium" "Large":
-            print("size must be one of 'Small', 'Medium', or 'Large'")
-            return\
+        return self._size
     
-    def tip():
+    def size(self, value):
+        if value not in ("Small", "Medium", "Large"):
+            print("size must be Small, Medium, or Large")
+        else:
+            self._size = value
+    
+    def tip(self):
         print("This coffee is great, here's a tip!")
-        price += 1
+        self.price += 1
