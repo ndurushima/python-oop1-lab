@@ -11,7 +11,7 @@ class Book:
 
     def page_count(self, value):
         if not isinstance(value, int):
-            print("page_count must be an integer")
+            print("page_count must be an integer\n")
         else:
             self._page_count = value
     
