@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 class Book:
-    def __init__(self):
+    def __init__(self, title, page_count):
         self.title = input("Enter the title of the book: ")
         self.page_count = int(input("Enter the number of pages in the book: "))
     

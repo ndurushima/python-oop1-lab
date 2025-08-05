@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 class Coffee:
-    def __init__(self):
+    def __init__(self, size, price):
         self.size = input("Enter the size of the coffee: ")
         self.price = float(input("Enter the price of the coffee: "))
     
