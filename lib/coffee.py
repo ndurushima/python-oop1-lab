@@ -5,10 +5,10 @@ class Coffee:
         self.size = size
         self.price = price
     
-    def size(self):
+    def get_size(self):
         return self._size
     
-    def size(self, value):
+    def set_size(self, value):
         if value not in ("Small", "Medium", "Large"):
             print("size must be Small, Medium, or Large")
         else:
