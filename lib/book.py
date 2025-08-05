@@ -6,7 +6,7 @@ class Book:
         self.page_count = page_count
     
     def get_page_count(self):
-        return self.page_count
+        return getattr(self, "_page_count", None)
 
     def set_page_count(self, value):
         if isinstance(value, int):
